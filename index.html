@@ -6,7 +6,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-    <!-- <script src="https://kit.fontawesome.com/22399e97ef.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/22399e97ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -25,18 +25,42 @@
             </ul>
 
             <div class="box-icons">
-                <p><i class='bxl  bx-linkedin' ></i> </p>
-                <p><i class='bxl  bx-github'  ></i> </p>
-                <p><i class='bxl  bx-instagram-alt'  ></i> </p>
+                <p><i class="fa-brands fa-linkedin"></i> </p>
+                <p><i class="fa-brands fa-github"></i> </p>
+                <p><i class="fa-brands fa-instagram"></i> </p>
+            </div>
+
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </header>
+
+        <div class="sidebar">
+            
+            <div class="close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
 
         <div class="blackhole-box">
             <video loop muted autoplay plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
         </div>
 
         <section class="hero">
-            <div class="hero-info">
+            <div class="hero-info autoblur">
                 <div class="hero-info-title">
                     <i class='bxl  bx-sketch'  ></i> 
                     FullStack Developer Portfolio
@@ -50,7 +74,7 @@
             </div>
 
             <div class="hero-vid-box">
-                <video autoplay loop muted plays-inline src="videos/hero-video.mp4" type="video/mp4"></video>
+                <video class="autoblur" autoplay loop muted plays-inline src="videos/hero-video.mp4" type="video/mp4"></video>
             </div>
 
             <div class="scroll-down"></div>
@@ -58,7 +82,7 @@
         </section>
 
         <section class="info-section">
-            <h1 class="section-title">Hello, There👋</h1>
+            <h1 class="section-title autoDisplay">Hello, There👋</h1>
 
             <div class="info-cards">
                 <div class="card">
@@ -92,6 +116,118 @@
                 </div>
             </div>
         </section>
+
+        <section class="my-projects">
+
+            <h1 class="section-title autoDisplay">My Projects 👨‍💻</h1>
+
+            <div class="project-card">
+
+                <div class="project-vid autoblur">
+                    <video id="projectVid1" src="videos/project3.mp4" type="video/mp4" ></video>
+                    <div class="hover-sign"></div>
+                </div>
+
+                <div class="project-info fadein-left">
+                    <h1><span class="gradient">To-Do</span> App</h1>
+
+                    <p>A FullStack To-Do App built with React for the frontend and Node.js with MongoDB for the backend. It allows users to add, update, and delete tasks seamlessly, providing a responsive and user-friendly interface.</p>
+
+                    <button><i class="fa-solid fa-up-right-from-square"></i>Website</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-vid autoblur">
+                    <video id="projectVid2" src="videos/project2.mp4" type="video/mp4" ></video>
+                </div>
+
+                <div class="project-info fadein-left">
+                    <h1>My <span class="gradient">Portfolio</span></h1>
+
+                    <p>A personal portfolio website showcasing my skills, projects, and experience as a FullStack developer. Built with HTML, CSS, and JavaScript to create a visually appealing and responsive design.</p>
+
+                    <button><i class="fa-solid fa-up-right-from-square"></i>Website</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h1 class="section-title autoDisplay">
+                My Skills 💪
+            </h1>
+
+            <div class="skills-box">
+                <img class="skills-image" src="images/digital brain (2).png" alt="skills-image">
+
+                <div class="designer autoDisplay">
+                    <h1 class="gradient">Web Developer <i class="fa-solid fa-laptop-code"></i></h1>
+
+                    <p>I specialize in web development using languages like HTML, CSS, and JavaScript. I have experience working with frameworks and libraries such as React, Node.js, and Express, which help me build dynamic and responsive web applications. My focus is on creating user-friendly interfaces and efficient backend systems to deliver seamless web experiences.</p>
+                </div>
+
+                <div class="coder autoDisplay">
+                    <h1 class="gradient">Coder <i class="fa-solid fa-code"></i></h1>
+
+                    <p>I enjoy solving complex problems and writing efficient, clean, and maintainable code. My passion for coding drives me to continuously learn and improve my skills, enabling me to tackle challenges and deliver high-quality solutions.</p>
+                </div>
+
+                <div class="slider" reverse="true" style="
+                    --width: 100px;
+                    --height: 100px;
+                    --quantity: 11; ">
+                    <div class="list">
+                        <div class="item" style="--position: 1;"><img src="images/1.png" alt=""></div>
+                        <div class="item" style="--position: 2;"><img src="images/2.png" alt=""></div>
+                        <div class="item" style="--position: 3;"><img src="images/3.webp" alt=""></div>
+                        <div class="item" style="--position: 4;"><img src="images/5.png" alt=""></div>
+                        <div class="item" style="--position: 5;"><img src="images/6.png" alt=""></div>
+                        <div class="item" style="--position: 6;"><img src="images/7.png" alt=""></div>
+                        <div class="item" style="--position: 7;"><img src="images/8.png" alt=""></div>
+                        <div class="item" style="--position: 8;"><img src="images/9.png" alt=""></div>
+                        <div class="item" style="--position: 9;"><img src="images/10.png" alt=""></div>
+                        <div class="item" style="--position: 10;"><img src="images/12.png" alt=""></div>
+                        <div class="item" style="--position: 11;"><img src="images/13.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h1 class="section-title autoDisplay">Let's talk 😊</h1>
+
+            <div class="social-box autoblur">
+                <a href=""><i class="fa-solid fa-phone"></i> +34 1112223334</a>
+                <a href=""><i class="fa-solid fa-inbox"></i> example@gmail.com</a>
+                <a href=""><i class="fa-brands fa-linkedin"></i> Connect Me</a>
+
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <div class="contact-box autoblur">
+                <p>Feel free to reach out to me for collaborations or any queries. I'm always open to connecting with like-minded individuals!</p>
+
+                <p>Full Name</p>
+                <input type="text" placeholder="Your Full name">
+
+                <p>Email</p>
+                <input type="text" placeholder="Enter your Email">
+
+                <p>Your Message</p>
+                <input class="input-message" type="text" placeholder="Share your thoughts">
+
+                <button><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </div>
+        </section>
+
+        <footer>
+            <h1>Copyrignt &copy; Subham, made by Subham Raul</h1>
+        </footer>
     </div>
 
     <script src="app.js"></script>
